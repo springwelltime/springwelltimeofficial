@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Springwell Time</title>
+  <meta name="description" content="Springwell began in 1987 as a small corner shop in Fajar, Melaka. Today Springwell Time is a watch retailer at Mahkota Parade, Melaka.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="about" data-title="title.about">
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html" data-i18n="nav.home"></a> / <span data-i18n="nav.about"></span></p>
+      <p class="eyebrow" data-i18n="about.hero.eyebrow"></p>
+      <h1 class="display" data-i18n="about.hero.title"></h1>
+      <p class="lead" data-i18n="about.hero.lead"></p>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section class="section">
+    <div class="wrap info-split">
+      <figure class="photo reveal">
+        <div class="ph ratio-3-2" data-img="images/about-fajar-1987.jpg" data-alt="The original Springwell shop in Fajar, Melaka"></div>
+        <figcaption data-i18n="about.photo.caption"></figcaption>
+      </figure>
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="about.story.eyebrow"></p>
+        <h2 class="display" data-i18n="about.story.title"></h2>
+        <hr class="rule">
+        <p class="lead" data-i18n="about.story.p1"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section section--black">
+    <div class="wrap">
+      <ol class="timeline">
+        <li class="reveal"><span class="timeline__year">1987</span><h3 class="h3" data-i18n="about.t1.title"></h3><p data-i18n="about.t1.text"></p></li>
+        <li class="reveal"><span class="timeline__year">2000</span><h3 class="h3" data-i18n="about.t2.title"></h3><p data-i18n="about.t2.text"></p></li>
+        <li class="reveal"><span class="timeline__year" data-i18n="about.t3.year"></span><h3 class="h3" data-i18n="about.t3.title"></h3><p data-i18n="about.t3.text"></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GROWING + COLLECTION -->
+  <section class="section">
+    <div class="wrap cards-2">
+      <div class="reveal">
+        <h2 class="h2" data-i18n="about.grow.title"></h2>
+        <hr class="rule" style="margin:0 0 22px">
+        <p class="muted" data-i18n="about.grow.text"></p>
+      </div>
+      <div class="reveal">
+        <h2 class="h2" data-i18n="about.coll.title"></h2>
+        <hr class="rule" style="margin:0 0 22px">
+        <p class="muted" data-i18n="about.coll.text"></p>
+        <a class="link-arrow" href="brands.html" data-i18n="cta.viewBrands"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BELIEF -->
+  <section class="section section--grey">
+    <div class="wrap belief reveal">
+      <p class="eyebrow" data-i18n="about.belief.eyebrow"></p>
+      <p class="belief__quote" data-i18n-html="about.belief"></p>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="marquee" data-render="marquee"></div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section section--black">
+    <div class="wrap info-split">
+      <div class="reveal">
+        <h2 class="display" data-i18n="about.visit.title"></h2>
+        <hr class="rule">
+        <ul class="info-list">
+          <li><span class="k" data-i18n="info.address"></span><span>Springwell Time · Mahkota Parade G63 &amp; G75, Melaka</span></li>
+          <li><span class="k" data-i18n="info.phone"></span><a data-tel href="#"></a></li>
+          <li><span class="k" data-i18n="info.whatsapp"></span><a data-wa="wa.general" href="#" data-site="phoneDisplay"></a></li>
+          <li><span class="k" data-i18n="info.hours"></span><span data-site="hours"></span></li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--gold" data-wa="wa.general" href="#"><span data-icon="wa"></span><span data-i18n="cta.whatsapp"></span></a>
+          <a class="btn btn--light" href="visit.html" data-i18n="cta.visit"></a>
+        </div>
+      </div>
+      <div class="ph ph--dark ratio-16-9 reveal" data-img="images/store-g75.jpg" data-alt="Springwell Time store, unit G75"></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
