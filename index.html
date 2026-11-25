@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Springwell Time | Watches & Service in Melaka</title>
+  <meta name="description" content="Springwell Time — watch retailer and service counter at Mahkota Parade, Melaka. Seiko, Tissot, Longines, TAG Heuer, Rado, Hamilton and more. Battery replacement from RM25.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="home" data-title="title.home">
+
+<main id="main">
+
+  <!-- HERO SLIDER — to use a photo, add data-img="images/hero-1.jpg" to the .ph element -->
+  <section class="hero" aria-roledescription="carousel">
+    <div class="hero__track">
+      <div class="hero__slide">
+        <div class="hero__media"><div class="ph ph--dark" data-img="images/store-g63.jpg" data-alt="Springwell Time store, unit G63"></div></div>
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="hero.1.eyebrow"></p>
+          <h1 class="display" data-i18n="hero.1.title"></h1>
+          <p data-i18n="hero.1.text"></p>
+          <div><a class="btn btn--light" href="brands.html" data-i18n="cta.viewBrands"></a></div>
+        </div>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__media"><div class="ph ph--dark" data-img="images/service-counter.jpg" data-alt="Inspecting a watch at the Springwell Time service counter"></div></div>
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="hero.2.eyebrow"></p>
+          <h2 class="display" data-i18n="hero.2.title"></h2>
+          <p data-i18n="hero.2.text"></p>
+          <div><a class="btn btn--light" href="services.html" data-i18n="cta.services"></a></div>
+        </div>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__media"><div class="ph ph--dark" data-img="images/store-g75.jpg" data-alt="Springwell Time store at Mahkota Parade"></div></div>
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="hero.3.eyebrow"></p>
+          <h2 class="display" data-i18n="hero.3.title"></h2>
+          <p data-i18n="hero.3.text"></p>
+          <div><a class="btn btn--light" href="visit.html" data-i18n="cta.visit"></a></div>
+        </div>
+      </div>
+    </div>
+    <button class="hero__ctrl hero__ctrl--prev" type="button" aria-label="Previous slide">‹</button>
+    <button class="hero__ctrl hero__ctrl--next" type="button" aria-label="Next slide">›</button>
+    <div class="hero__progress"></div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="section">
+    <div class="wrap statement reveal">
+      <p class="eyebrow" data-i18n="home.statement.eyebrow"></p>
+      <h2 class="display" data-i18n-html="home.statement"></h2>
+      <hr class="rule">
+      <p class="lead" data-i18n="home.statement.text"></p>
+    </div>
+  </section>
+
+  <!-- STORY CARDS -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap cards-2">
+      <a class="card reveal" href="brands.html">
+        <div class="ph ratio-3-2" data-ph="Collection photo" data-img=""></div>
+        <p class="eyebrow" data-i18n="home.card1.eyebrow"></p>
+        <h3 class="h2" data-i18n="home.card1.title"></h3>
+        <p data-i18n="home.card1.text"></p>
+        <span class="link-arrow" data-i18n="cta.explore"></span>
+      </a>
+      <a class="card reveal" href="services.html">
+        <div class="ph ratio-3-2" data-ph="Service counter photo" data-variant="1" data-img=""></div>
+        <p class="eyebrow" data-i18n="home.card2.eyebrow"></p>
+        <h3 class="h2" data-i18n="home.card2.title"></h3>
+        <p data-i18n="home.card2.text"></p>
+        <span class="link-arrow" data-i18n="cta.explore"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- BRANDS STRIP -->
+  <section class="section--tight">
+    <div class="wrap section-head">
+      <h2 class="h2" data-i18n="home.brands.title"></h2>
+      <a class="link-arrow" href="brands.html" data-i18n="cta.viewBrands"></a>
+    </div>
+    <div class="marquee" data-render="marquee"></div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section section--black">
+    <div class="wrap info-split">
+      <div class="reveal">
+        <p class="eyebrow" style="color:var(--gold-soft)" data-i18n="home.visit.eyebrow"></p>
+        <h2 class="display" data-i18n="home.visit.title"></h2>
+        <hr class="rule">
+        <p class="lead" data-i18n="home.visit.text"></p>
+        <ul class="info-list">
+          <li><span class="k" data-i18n="info.address"></span><span data-site="address"></span></li>
+          <li><span class="k" data-i18n="info.units"></span><span>G63 &amp; G75</span></li>
+          <li><span class="k" data-i18n="info.hours"></span><span data-site="hours"></span></li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--gold" data-wa="wa.general" href="#"><span data-icon="wa"></span><span data-i18n="cta.whatsapp"></span></a>
+          <a class="btn btn--light" href="visit.html" data-i18n="cta.visit"></a>
+        </div>
+      </div>
+      <figure class="photo reveal">
+        <div class="ph ph--dark ratio-16-9" data-img="images/store-g63.jpg" data-alt="Springwell Time store, unit G63"></div>
+        <figcaption>Mahkota Parade · G63</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

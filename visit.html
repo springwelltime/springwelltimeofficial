@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit Us | Springwell Time</title>
+  <meta name="description" content="Visit Springwell Time at Mahkota Parade, Melaka — units G63 and G75, open 11AM to 10PM.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="visit" data-title="title.visit">
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html" data-i18n="nav.home"></a> / <span data-i18n="nav.visit"></span></p>
+      <p class="eyebrow" data-i18n="visit.hero.eyebrow"></p>
+      <h1 class="display" data-i18n="visit.hero.title"></h1>
+      <p class="lead" data-i18n="visit.hero.lead"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap info-split" style="align-items:start">
+      <div class="reveal">
+        <div class="units">
+          <div class="unit">
+            <p class="eyebrow" style="margin:0" data-i18n="visit.unit"></p>
+            <div class="unit__no">G63</div>
+            <p data-i18n="visit.unit.floor"></p>
+            <p data-site="hours"></p>
+          </div>
+          <div class="unit">
+            <p class="eyebrow" style="margin:0" data-i18n="visit.unit"></p>
+            <div class="unit__no">G75</div>
+            <p data-i18n="visit.unit.floor"></p>
+            <p data-site="hours"></p>
+          </div>
+        </div>
+        <ul class="info-list">
+          <li><span class="k" data-i18n="info.address"></span><span data-site="address"></span></li>
+          <li><span class="k" data-i18n="info.hours"></span><span data-site="hours"></span></li>
+          <li><span class="k" data-i18n="info.whatsapp"></span><a data-wa="wa.general" href="#" data-site="phoneDisplay"></a></li>
+          <li><span class="k" data-i18n="info.phone"></span><a data-tel href="#"></a></li>
+        </ul>
+        <h2 class="h3" data-i18n="visit.getting.title"></h2>
+        <p class="muted" data-i18n="visit.getting.text"></p>
+        <div class="btn-row" style="margin-top:24px">
+          <a class="btn" data-directions href="#" data-i18n="cta.directions"></a>
+          <a class="btn btn--ghost" data-wa="wa.general" href="#"><span data-icon="wa"></span><span data-i18n="cta.whatsapp"></span></a>
+        </div>
+      </div>
+      <div class="reveal">
+        <iframe class="map" data-map loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-i18n-attr="title:visit.map.title"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap store-photos">
+      <figure class="photo reveal">
+        <div class="ph ratio-16-9" data-img="images/store-g63.jpg" data-alt="Springwell Time store, unit G63"></div>
+        <figcaption><span data-i18n="visit.unit"></span> G63</figcaption>
+      </figure>
+      <figure class="photo reveal">
+        <div class="ph ratio-16-9" data-img="images/store-g75.jpg" data-alt="Springwell Time store, unit G75"></div>
+        <figcaption><span data-i18n="visit.unit"></span> G75</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+</body>
+</html>

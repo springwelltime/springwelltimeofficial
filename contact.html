@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Springwell Time</title>
+  <meta name="description" content="Contact Springwell Time on WhatsApp for watch prices, availability and service quotes.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="contact" data-title="title.contact">
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html" data-i18n="nav.home"></a> / <span data-i18n="nav.contact"></span></p>
+      <p class="eyebrow" data-i18n="contact.hero.eyebrow"></p>
+      <h1 class="display" data-i18n="contact.hero.title"></h1>
+      <p class="lead" data-i18n="contact.hero.lead"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap info-split" style="align-items:start">
+      <div class="reveal">
+        <div class="contact-cards">
+          <div class="contact-card"><span data-icon="wa"></span><div><div class="k" data-i18n="info.whatsapp"></div><a class="v" data-wa="wa.general" href="#" data-site="phoneDisplay"></a></div></div>
+          <div class="contact-card"><span data-icon="phone"></span><div><div class="k" data-i18n="info.phone"></div><a class="v" data-tel href="#"></a></div></div>
+          <div class="contact-card"><span data-icon="clock"></span><div><div class="k" data-i18n="info.hours"></div><div class="v" data-site="hours"></div></div></div>
+          <div class="contact-card"><span data-icon="pin"></span><div><div class="k" data-i18n="info.address"></div><div class="v" style="font-size:15px">Mahkota Parade G63 &amp; G75, Bandar Hilir, 75000 Melaka</div></div></div>
+        </div>
+        <h2 class="h3" style="margin-top:40px" data-i18n="contact.follow"></h2>
+        <div class="btn-row" style="margin-top:12px">
+          <a class="btn btn--ghost" href="https://www.instagram.com/springwelltime/" target="_blank" rel="noopener"><span data-icon="ig"></span>Instagram</a>
+          <a class="btn btn--ghost" href="https://www.facebook.com/springwelltime/" target="_blank" rel="noopener"><span data-icon="fb"></span>Facebook</a>
+        </div>
+      </div>
+
+      <form class="form reveal" id="enquiry">
+        <h2 class="h2" data-i18n="form.title"></h2>
+        <div class="field">
+          <label for="f-name" data-i18n="form.name"></label>
+          <input id="f-name" name="name" type="text" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="f-topic" data-i18n="form.topic"></label>
+          <select id="f-topic" name="topic"></select>
+        </div>
+        <div class="field">
+          <label for="f-msg" data-i18n="form.msg"></label>
+          <textarea id="f-msg" name="message" data-i18n-attr="placeholder:form.msgPh"></textarea>
+        </div>
+        <div>
+          <button class="btn" type="submit"><span data-icon="wa"></span><span data-i18n="form.send"></span></button>
+        </div>
+        <p class="form-note" data-i18n="form.note"></p>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>
