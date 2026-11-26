@@ -25,6 +25,7 @@ window.I18N = {
     "nav.contact": "Contact",
 
     "cta.whatsapp": "WhatsApp us",
+    "cta.contactUs": "Contact Us",
     "cta.chat": "Chat with us",
     "cta.enquire": "Enquire on WhatsApp",
     "cta.directions": "Get directions",
@@ -221,6 +222,7 @@ window.I18N = {
     "nav.contact": "Hubungi",
 
     "cta.whatsapp": "WhatsApp kami",
+    "cta.contactUs": "Hubungi Kami",
     "cta.chat": "Bual dengan kami",
     "cta.enquire": "Tanya melalui WhatsApp",
     "cta.directions": "Dapatkan arah",
@@ -410,6 +412,7 @@ window.I18N = {
     "nav.contact": "联系我们",
 
     "cta.whatsapp": "WhatsApp 联系",
+    "cta.contactUs": "联系我们",
     "cta.chat": "立即咨询",
     "cta.enquire": "WhatsApp 咨询",
     "cta.directions": "获取路线",

@@ -207,7 +207,7 @@
       '<header class="header"><div class="wrap header__row">' +
         '<div class="header__left"><button class="menu-btn" type="button" aria-label="Menu" aria-controls="drawer" aria-expanded="false"><span></span></button></div>' +
         logo() +
-        '<div class="header__right"><a class="header-wa" data-wa="wa.general" href="#">' + ICON.wa + '<span data-i18n="cta.whatsapp"></span></a></div>' +
+        '<div class="header__right"><a class="header-wa" data-wa="wa.general" href="#">' + ICON.wa + '<span data-i18n="cta.contactUs"></span></a></div>' +
       "</div>" +
       '<nav class="nav" aria-label="Main"><ul>' + navLinks(page) + "</ul></nav>" +
       "</header>" +
