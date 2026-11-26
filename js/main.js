@@ -146,13 +146,16 @@
   }
 
   /* ---------- Shell: header, drawer, footer ---------- */
+  // Main menu: 3 tabs. The 4th item of an entry lists its drop-down pages.
   var NAV = [
     ["index.html", "nav.home", "home"],
-    ["brands.html", "nav.brands", "brands"],
-    ["services.html", "nav.services", "services"],
-    ["about.html", "nav.about", "about"],
-    ["visit.html", "nav.visit", "visit"],
-    ["contact.html", "nav.contact", "contact"]
+    ["brands.html", "nav.brands", "brands", [
+      ["services.html", "nav.services", "services"]
+    ]],
+    ["about.html", "nav.about", "about", [
+      ["visit.html", "nav.visit", "visit"],
+      ["contact.html", "nav.contact", "contact"]
+    ]]
   ];
 
   function langButtons() {
@@ -161,10 +164,30 @@
     }).join("");
   }
 
+  function navLink(n, page, cls) {
+    return '<a href="' + n[0] + '"' + (cls ? ' class="' + cls + '"' : "") +
+      (n[2] === page ? ' aria-current="page"' : "") + ' data-i18n="' + n[1] + '"></a>';
+  }
+
+  // Menu with drop-downs (header + mobile drawer)
   function navLinks(page) {
     return NAV.map(function (n) {
-      return '<li><a href="' + n[0] + '"' + (n[2] === page ? ' aria-current="page"' : "") + ' data-i18n="' + n[1] + '"></a></li>';
+      var kids = n[3];
+      if (!kids) return "<li>" + navLink(n, page) + "</li>";
+      var inSection = n[2] === page || kids.some(function (k) { return k[2] === page; });
+      return '<li class="has-sub' + (inSection ? " is-section" : "") + '">' + navLink(n, page, "has-sub__link") +
+        '<ul class="sub">' + kids.map(function (k) { return "<li>" + navLink(k, page) + "</li>"; }).join("") + "</ul></li>";
     }).join("");
+  }
+
+  // Flat list of every page except Home (footer)
+  function flatLinks() {
+    var out = [];
+    NAV.forEach(function (n) {
+      if (n[2] !== "home") out.push(n);
+      (n[3] || []).forEach(function (k) { out.push(k); });
+    });
+    return out.map(function (n) { return "<li>" + navLink(n, "") + "</li>"; }).join("");
   }
 
   function logo() {
@@ -207,7 +230,7 @@
               '<a href="' + S.facebook + '" target="_blank" rel="noopener" aria-label="Facebook">' + ICON.fb + "</a>" +
               '<a data-wa="wa.general" href="#" aria-label="WhatsApp">' + ICON.wa + "</a>" +
             "</div></div>" +
-          '<div><h4 data-i18n="footer.explore"></h4><ul>' + navLinks("").replace(/<li><a href="index.html"[^]*?<\/li>/, "") + "</ul></div>" +
+          '<div><h4 data-i18n="footer.explore"></h4><ul>' + flatLinks() + "</ul></div>" +
           '<div><h4 data-i18n="footer.visit"></h4><ul>' +
             "<li>" + S.mall + '</li><li><span data-i18n="visit.units"></span> ' + S.units.join(" &amp; ") + "</li><li>Bandar Hilir, Melaka</li>" +
             '<li><a class="link-arrow" style="color:inherit;margin-top:6px" href="visit.html" data-i18n="cta.directions"></a></li></ul></div>' +
